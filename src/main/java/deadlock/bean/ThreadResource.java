@@ -1,11 +1,9 @@
-package bean;
+package deadlock.bean;
 
-import java.sql.ResultSet;
-
-public class Resource {
+public class ThreadResource {
     private String name;
 
-    public Resource(String name) {
+    public ThreadResource(String name) {
         this.name = name;
     }
 

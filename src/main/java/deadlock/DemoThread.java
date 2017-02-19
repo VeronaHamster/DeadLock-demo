@@ -1,11 +1,12 @@
-import bean.Resource;
+package deadlock;
+import deadlock.bean.ThreadResource;
 
 public class DemoThread extends Thread{
-    private final Resource resource1;
-    private final Resource resource2;
+    private final ThreadResource resource1;
+    private final ThreadResource resource2;
     private String numberThread;
 
-    public DemoThread(Resource res1, Resource res2, String number) {
+    public DemoThread(ThreadResource res1, ThreadResource res2, String number) {
         this.resource1 = res1;
         this.resource2 = res2;
         this.numberThread = number;
